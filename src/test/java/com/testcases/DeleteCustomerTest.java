@@ -11,7 +11,7 @@ import com.businessAPI.DeleteCustomerAPI;
 import com.google.gson.JsonObject;
 import com.setUp.BaseTest;
 import com.utilities.DataUtils;
-import com.utilities.TestUtils;
+
 
 import extentlisteners.ExtentListeners;
 import io.restassured.RestAssured;
@@ -33,7 +33,7 @@ public class DeleteCustomerTest extends BaseTest {
 		res.prettyPrint();
 		ExtentListeners.testReport.get().info(data.toString());	
 		//System.out.println("Deleted id form the respomse : "+res.jsonPath().get("id").toString());
-		String fetched = res.jsonPath().get("id").toString();
+		//String fetched = res.jsonPath().get("id").toString();
 		int status=res.getStatusCode();
 		
 		
